@@ -83,6 +83,10 @@ function takeCommand(message){
         speak("opening calculator...");  
         window.open("calculator://");  
     }
+        else if(message.includes("happy birthday")){
+        speak("calling Dhairya...");  
+        window.open("contact://9773244867");  
+    }
     
     else if(message.includes("time")){
         let time = new Date().toLocaleString(undefined,{hour:"numeric",minute:"numeric"});
